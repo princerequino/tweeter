@@ -34,3 +34,7 @@ main {
   margin: auto;
   padding-bottom: 40px;
 }
+
+main h2{
+  font-size: 28px;
+}

@@ -72,4 +72,5 @@ section.posted-tweet {
 
 .icons .fas{
   margin-right: 0.7em;
+  cursor: pointer;
 }

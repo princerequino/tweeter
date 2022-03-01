@@ -8,10 +8,10 @@ $(document).ready(function() {
     $(this).css("color", "black")
   })
 
-  // $(".posted-tweet div").hover(function() {
-  //   $(this).css("box-shadow", "3px 3px");
-  // }, function(){
-  //   $(this).css("box-shadow", "0px 0px");
-  // })
+  $(".posted-tweet").hover(function() {
+    $(this).css("box-shadow", "3px 3px");
+  }, function(){
+    $(this).css("box-shadow", "0px 0px");
+  })
 
 });
