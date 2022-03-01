@@ -1,8 +1,8 @@
 /* STYLES FOR NEW AN POSTED TWEETS AREA */
 #tweet-form {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
 }
 
@@ -16,10 +16,10 @@
 #tweet-text {
   resize: none;
   width: 100%;
-  height: 45px;
+  height:50px;
   background-color: #f4f1ec;
   border: none;
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
   outline: none;
 }
 
@@ -36,4 +36,9 @@
 
 .counter {
   float: right;
+}
+
+.center {
+  margin: auto;
+  width: 90%;
 }
