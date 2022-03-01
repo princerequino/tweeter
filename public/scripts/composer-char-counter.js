@@ -1,7 +1,17 @@
 $(document).ready(function () {
-  $("#tweet-text").keyup(function () {
-    let chars = $(this).val().length;
-    let counter = 140 - chars;
-    $(this).parent().find(".counter").val(counter);
+  const $tweetbox = $('#tweet-text');
+
+  $tweetbox.on('keyup', function() {
+    let $counter = $(this).parent().find('output');
+    $counter.val(140 - this.value.length);
+    console.log($counter.val(140 - this.value.length));
+
+    let maxTweet = $counter.val() < 0;
+    if (maxTweet) {
+      $counter.addClass('max-tweet');
+    } else {
+      $counter.removeClass('max-tweet');
+    }
+
   });
 });
