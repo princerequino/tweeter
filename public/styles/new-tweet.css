@@ -1,0 +1,39 @@
+/* STYLES FOR NEW AN POSTED TWEETS AREA */
+#tweet-form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#errors {
+  position: relative;
+  margin: 5px;
+  top: -10px;
+  color: red;
+}
+
+#tweet-text {
+  resize: none;
+  width: 100%;
+  height: 45px;
+  background-color: #f4f1ec;
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+}
+
+#tweet-details {
+  margin-top: 10px;
+  font-family: 'Bungee', cursive;
+}
+
+#tweet-button {
+  float: left;
+  background-color: #4056A1;
+  color: white;
+}
+
+.counter {
+  float: right;
+}
