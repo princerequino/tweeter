@@ -1,29 +1,75 @@
 section.posted-tweet {
+  display: flex;
   flex-direction: column;
-  margin-top: 50px;
-}
-
-
-
-
-
-.posted-tweet header {
   text-align: left;
   border: 4px solid;
   border-color: black;
   width: 90%;
   margin: auto;
+  margin-top: 5%;
   padding-bottom: 10px;
   padding: 10px;
-
+  justify-content: space-between;
 }
 
-.posted-tweet header span {
+.posted-tweet .tweet-header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 0;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.posted-tweet .tweet-header h4{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.posted-tweet .tweet-header span {
   float: right;
   opacity: 0.6;
 }
 
-.posted-tweet article {
+.posted-tweet div {
   border-bottom: solid black;
   padding-bottom: 10px;
+}
+
+.posted-tweet .tweet-body{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5%;
+
+}
+
+
+.posted-tweet .tweet-footer {
+  display: flex;
+  font-size: large;
+  justify-content: space-between;
+  color: rgb(41, 37, 37);
+  border: 0;
+  margin-top: 0.5em;
+}
+
+
+.posted-tweet .tweet-footer span {
+  display: flex;
+  font-size: medium;
+  float: left;
+}
+
+
+
+.posted-tweet .tweet-footer .icons{
+  border: 0; 
+  font-size: medium;
+  float: right;
+}
+
+.icons .fas{
+  margin-right: 0.7em;
 }
