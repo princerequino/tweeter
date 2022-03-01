@@ -1,6 +1,5 @@
 /* STYLES FOR NEW AN POSTED TWEETS AREA */
 #tweet-form {
-  width: 90%;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
@@ -41,7 +40,7 @@
 
 .center {
   margin: auto;
-  width: 90%;
+  width: 85%;
 }
 
 .max-tweet {
