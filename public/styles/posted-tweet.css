@@ -10,16 +10,27 @@ section.posted-tweet {
   padding-bottom: 10px;
   padding: 10px;
   justify-content: space-between;
+  /* background-color: #f04c20; */
+  /* background-image: url(../images/black-linen.png); */
 }
 
 .posted-tweet .tweet-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
   border: 0;
   width: 100%;
   justify-content: space-between;
   margin: auto;
+  align-items: center;
+}
+
+.posted-tweet .tweet-header .photo-user{
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  align-items: center;
+  margin: 0;
 }
 
 .posted-tweet .tweet-header h4{
@@ -42,6 +53,7 @@ section.posted-tweet {
   display: flex;
   flex-wrap: wrap;
   padding-top: 5%;
+  color: black;
 
 }
 
@@ -60,6 +72,7 @@ section.posted-tweet {
   display: flex;
   font-size: medium;
   float: left;
+  color: grey;
 }
 
 
@@ -73,4 +86,11 @@ section.posted-tweet {
 .icons .fas{
   margin-right: 0.7em;
   cursor: pointer;
+}
+
+
+.posted-tweet img {
+  display: flex;
+  height: 50px;
+  width: 50px;
 }

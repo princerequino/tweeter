@@ -14,6 +14,8 @@
 }
 
 #tweet-text {
+  display: flex;
+  justify-content: center;
   resize: none;
   width: 100%;
   height:50px;
@@ -21,6 +23,8 @@
   border: none;
   border-bottom: 3px solid;
   outline: none;
+  font-size: 20px;
+
 }
 
 #tweet-details {
