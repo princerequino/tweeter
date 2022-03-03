@@ -3,29 +3,26 @@ $(document).ready(function () {
   $(`#tweet-form`).submit(function (ev) {
     ev.preventDefault();
     const serial = $(this).serialize();
-  
-    const tweet = $('#tweet-text').val().trim()
+
+    const tweet = $("#tweet-text").val().trim();
 
     if (tweet.length < 1) {
-      $(`#errors`).html("No empty tweets allowed. C'mon, say something!").hide().slideDown();
+      $(`#errors`).html("say something!").hide().slideDown();
       return;
-    }else {
-      if (tweet.length > 140) { //will return error if characters exceed 140
-        $(`#errors`).html("Woah, woah, chill out. Too many characters!").hide().slideDown();
+    } else {
+      if (tweet.length > 140) {
+        //will return error if characters exceed 140
+        $(`#errors`).html("Too many characters!").hide().slideDown();
         return;
-      } else { //will add new tweet to database and prepend to page
+      } else {
+        //will add new tweet to database and prepend to page
         $.post(`/tweets/`, serial, null).then(function () {
-          $.ajax(`/tweets`, { method: 'GET' }).then(function (tweet) {
-  
+          $.ajax(`/tweets`, { method: "GET" }).then(function (tweet) {
             let $newHTML = createTweetElement(tweet[tweet.length - 1]);
-            $(`${$newHTML}`).prependTo($('.posts')).hide().slideDown("slow");
-          })
-        })
+            $(`${$newHTML}`).prependTo($(".posts")).hide().slideDown("slow");
+          });
+        });
       }
-  
     }
-    
   });
-
-
 });
