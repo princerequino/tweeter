@@ -24,9 +24,12 @@ $(document).ready(function () {
           $.ajax(`/tweets`, { method: "GET" }).then(function (tweet) {
             let $newHTML = createTweetElement(tweet[tweet.length - 1]);
             $(`${$newHTML}`).prependTo($(".posts")).hide().slideDown("slow");
+            $('#tweet-text').val('') ; //resets form UPON success of submitting
+            $('.counter').val('140'); //resets counter UPON success of submitting
           });
         });
       }
     }
+
   });
 });
