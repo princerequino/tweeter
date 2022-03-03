@@ -28,7 +28,7 @@ $(document).ready(function () {
       </div>
       <span>${handle}</span>
       </div>
-      <div class="tweet-body" name="tweet">${tweetText}
+      <div class="tweet-body" name="tweet">${escape(tweetText)}
       </div>
     <div class="tweet-footer">
       <span id="time">${date}</span>

@@ -83,7 +83,7 @@ section.posted-tweet {
   float: right;
 }
 
-.icons .fas{
+.posts .icons .fas{
   margin-right: 0.7em;
   cursor: pointer;
 }
