@@ -44,7 +44,18 @@ const loadtweets = function () {
 
 $(document).ready(function () {
   loadtweets();
+  $(`.new-tweet`).hide();
+
+  $(`#new-tweet-toggle`).click(function() {
+    $(`.new-tweet`).slideToggle();
+    $('.new-tweet #tweet-text').focus();
+  });
+
+
 });
+
+
+
 
 // ESCAPE FUNCTION TO PREVENT XSS
 const escape = function (str) {
