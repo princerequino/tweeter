@@ -14,14 +14,10 @@ html {
  * Global layout stuff
  
  */
- .parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-}
+
 
 body {
+
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
@@ -33,8 +29,15 @@ main {
   background-color: #f4f1ec;
   margin: auto;
   padding-bottom: 40px;
+  
 }
 
-main h2{
-  font-size: 28px;
+/*For Desktop-Only Styling*/
+@media (min-width: 1024px) {
+
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
 }

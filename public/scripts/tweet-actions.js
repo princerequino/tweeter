@@ -3,6 +3,9 @@ $(document).ready(function () {
   $(`#tweet-form`).submit(function (ev) {
     ev.preventDefault();
     const serial = $(this).serialize();
+    const text = $('#tweet-text').val();
+    const safeText = $('#tweet-text').text(text).html();
+    $(`#tweet-text`).val(safeText);
 
     const tweet = $("#tweet-text").val().trim();
 
@@ -15,6 +18,7 @@ $(document).ready(function () {
         $(`#errors`).html("Too many characters!").hide().slideDown();
         return;
       } else {
+        $(`#errors`).slideUp();
         //will add new tweet to database and prepend to page
         $.post(`/tweets/`, serial, null).then(function () {
           $.ajax(`/tweets`, { method: "GET" }).then(function (tweet) {

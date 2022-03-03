@@ -10,10 +10,12 @@ section.posted-tweet {
   padding-bottom: 10px;
   padding: 10px;
   justify-content: space-between;
-  /* background-color: #f04c20; */
-  /* background-image: url(../images/black-linen.png); */
 }
 
+.posted-tweet:hover{
+  box-shadow: 3px 3px;
+}
+  
 .posted-tweet .tweet-header {
   display: flex;
   flex-direction: row;
@@ -93,4 +95,16 @@ section.posted-tweet {
   height: 50px;
   width: 50px;
   margin: 1em;
+}
+
+section .posts {
+  background-color: #d8ccba;
+}
+
+@media (min-width: 1024px) {
+
+ section.posts {
+   margin-top: 5em;
+ }
+
 }
