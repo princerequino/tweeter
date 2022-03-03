@@ -83,11 +83,15 @@ section.posted-tweet {
   float: right;
 }
 
-.posts .icons .fas{
+.posts .icons i{
   margin-right: 0.7em;
   cursor: pointer;
+  color: black
 }
 
+.posts .icons i:hover{
+  color: green
+}
 
 .posted-tweet img {
   display: flex;
