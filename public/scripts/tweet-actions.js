@@ -7,10 +7,11 @@ $(document).ready(function () {
     const tweet = $('#tweet-text').val().trim()
 
     if (tweet.length < 1) {
-      alert("Please type a tweet!")
+      $(`#errors`).html("No empty tweets allowed. C'mon, say something!").hide().slideDown();
+      return;
     }else {
       if (tweet.length > 140) { //will return error if characters exceed 140
-        alert("Too many characters my friend!");
+        $(`#errors`).html("Woah, woah, chill out. Too many characters!").hide().slideDown();
         return;
       } else { //will add new tweet to database and prepend to page
         $.post(`/tweets/`, serial, null).then(function () {
