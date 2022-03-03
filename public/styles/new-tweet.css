@@ -9,6 +9,17 @@
 #new-tweet-toggle {
   color: red;
   cursor: pointer;
+  animation: MoveUpDown 1s linear infinite;
+}
+
+/* moving arrows up/down */
+@keyframes MoveUpDown {
+  100% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(-8px);
+  }
 }
 
 #errors {
