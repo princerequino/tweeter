@@ -16,13 +16,13 @@ This repository is the starter code for the project: Students will fork and clon
 ## Screenshots
 
 ### Desktop 
-
+!["Desktop"](https://github.com/princerequino/tweeter/blob/master/docs/desktop.JPG)
 ### Mobile
-
+!["Mobile"](https://github.com/princerequino/tweeter/blob/master/docs/Mobile.JPG)
 ### Warnings
-
+!["Warnings"](https://github.com/princerequino/tweeter/blob/master/docs/Warning.JPG)
 ### Tweet-box
-
+!["Compose-A-Tweet"](https://github.com/princerequino/tweeter/blob/master/docs/Compose-Tweet.JPG)
 
 
 
