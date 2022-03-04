@@ -46,16 +46,11 @@ $(document).ready(function () {
   loadtweets();
   $(`.new-tweet`).hide();
 
-  $(`#new-tweet-toggle`).click(function() {
+  $(`#new-tweet-toggle`).click(function () {
     $(`.new-tweet`).slideToggle();
-    $('.new-tweet #tweet-text').focus();
+    $(".new-tweet #tweet-text").focus();
   });
-
-
 });
-
-
-
 
 // ESCAPE FUNCTION TO PREVENT XSS
 const escape = function (str) {

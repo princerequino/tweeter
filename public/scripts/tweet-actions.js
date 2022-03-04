@@ -3,8 +3,8 @@ $(document).ready(function () {
   $(`#tweet-form`).submit(function (ev) {
     ev.preventDefault();
     const serial = $(this).serialize();
-    const text = $('#tweet-text').val();
-    const safeText = $('#tweet-text').text(text).html();
+    const text = $("#tweet-text").val();
+    const safeText = $("#tweet-text").text(text).html();
     $(`#tweet-text`).val(safeText);
 
     const tweet = $("#tweet-text").val().trim();
@@ -24,12 +24,11 @@ $(document).ready(function () {
           $.ajax(`/tweets`, { method: "GET" }).then(function (tweet) {
             let $newHTML = createTweetElement(tweet[tweet.length - 1]);
             $(`${$newHTML}`).prependTo($(".posts")).hide().slideDown("slow");
-            $('#tweet-text').val('') ; //resets form UPON success of submitting
-            $('.counter').val('140'); //resets counter UPON success of submitting
+            $("#tweet-text").val(""); //resets form UPON success of submitting
+            $(".counter").val("140"); //resets counter UPON success of submitting
           });
         });
       }
     }
-
   });
 });
